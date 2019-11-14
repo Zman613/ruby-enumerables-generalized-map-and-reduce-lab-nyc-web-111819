@@ -9,6 +9,18 @@ def map(source)
   array
 end
 
-def reduce(source, start = 0)
-
+def reduce(source, start*)
+  i = 0
+  if start
+    total = start
+  end
+  while i < source.size do
+    if start
+      total += source[i]
+    else
+      total = yield(source[i])
+    end
+    i += 1
+  end
+  total
 end
