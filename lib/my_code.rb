@@ -13,6 +13,8 @@ def reduce(source, start = nil)
   i = 0
   if start
     total = start
+  else
+    total = 0
   end
   while i < source.size do
     if start
