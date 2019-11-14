@@ -11,15 +11,13 @@ end
 
 def reduce(source, start = nil)
   i = 0
-  if !start
-    total = 0
-  else
+  if start
     total = start
+  else
+    total = source[0]
+    i = 1
   end
   while i < source.size do
-    if start
-      total += source[i]
-    else
       total = yield(source[i])
     end
     i += 1
