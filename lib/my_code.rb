@@ -19,7 +19,6 @@ def reduce(source, start = nil)
   end
   while i < source.size do
       total = yield(source[i])
-    end
     i += 1
   end
   total
