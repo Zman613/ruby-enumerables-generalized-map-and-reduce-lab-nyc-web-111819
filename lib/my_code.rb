@@ -11,10 +11,10 @@ end
 
 def reduce(source, start = nil)
   i = 0
-  if (start == nil)
-    total = start
-  else
+  if !start
     total = 0
+  else
+    total = start
   end
   while i < source.size do
     if start
