@@ -8,5 +8,3 @@ def map(source)
   end
   array
 end
-
-
