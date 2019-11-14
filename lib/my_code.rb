@@ -10,5 +10,17 @@ def my_own_map(source)
 end
 
 my_own_map(source_array) do |negative|
-  * -1
+  negative * -1
+end
+
+my_own_map(source_array) do |nothing|
+  nothing
+end
+
+my_own_map(source_array) do |double|
+  double * 2
+end
+
+my_own_map(source_array) do |square|
+  square * 2
 end
