@@ -2,7 +2,7 @@
 def map(source)
   i = 0
   array = []
-  while i < source.size
+  while i < source.size do
     array << yield(source[i])
     i += 1
   end
