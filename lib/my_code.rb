@@ -11,7 +11,7 @@ end
 
 def reduce(source, start = nil)
   i = 0
-  if start
+  if (start == nil)
     total = start
   else
     total = 0
