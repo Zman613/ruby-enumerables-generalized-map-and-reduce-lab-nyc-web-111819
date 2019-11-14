@@ -8,3 +8,7 @@ def my_own_map(source)
   end
   array
 end
+
+my_own_map(source_array) do |negative|
+  * -1
+end
