@@ -9,6 +9,6 @@ def map(source)
   array
 end
 
-map([1..10]) do |negtive|
+map(1..10) do |negtive|
   * -1
 end
